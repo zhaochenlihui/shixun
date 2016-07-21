@@ -1,0 +1,124 @@
+body {
+             font-family:KaiTi;
+             background: url(../img/class_new.png);
+}
+.verticalAccordion {
+                width: 200px;
+                margin: 50 auto;
+       
+            }
+            
+            .verticalAccordion ul {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .title {
+                list-style: none outside none;
+                display: block;
+                margin: 0;
+                padding: 0;
+               /* height: 40px;*/
+                width: 100%;
+               /* overflow: hidden;      /*hidden不显示也不占位置 所以高度增加之后所有的都向下移*/
+                background: #77d7be;
+                -moz-transition: height 0.7s ease-in-out;
+                -webkit-transition: height 0.7s ease-in-out;
+                -o-transition: height 0.7s ease-in-out;
+                transition: height 0.7s ease-in-out;
+            }
+            
+            #user_manage {
+                height: 40px;
+                overflow: hidden;
+            }
+            #require_repair {
+                height: 40px;
+                overflow: hidden;
+            }
+            #repair_manage {
+                height: 40px;
+                overflow: hidden;
+            }
+            #account {
+                height: 40px;
+                overflow: hidden;
+            }
+            #spare {
+                height: 40px;
+                overflow: hidden;
+            }
+            .verticalAccordion h3 {
+                margin: 0;
+                padding: 10px;
+                height: 19px;
+                border-top: 1px solid #f0f0f0;
+                text-transform: uppercase;
+                color: #000;
+                background: #00a77b;
+                cusor: pointer;
+                position: relative;
+                background: -moz-linear-gradient( top, #03966f, #00a77b);
+                background: -webkit-gradient(linear, left top, left bottom, from(#03966f), to(#00a77b));
+                background: -webkit-linear-gradient( top, #03966f, #00a77b);
+                background: -o-linear-gradient( top, #03966f, #00a77b);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff03966f, endColorstr=#ffcccccc); 
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff999999, endColorstr=#ffcccccc)";   
+            }
+            
+            .verticalAccordion h3:before {
+                content:"";
+                border: 5px solid #000;
+                border-color: #000 transparent transparent;
+                position: absolute;
+                right: 10px;
+                top: 15px;
+                width: 0;
+                height: 0;
+            }
+            
+            .verticalAccordion div {
+                margin: 0;
+                overflow: auto;
+                padding: 10px;
+            }
+
+            .verticalAccordion div li {
+                margin: 0;
+                height: 40px;
+                padding: 0;
+            }
+            
+            
+
+            #user_manage:hover {
+                height: 140px;
+            }
+            #require_repair:hover {
+                height: 180px;
+            }
+            #repair_manage:hover {
+                height: 140px;
+            }
+            #account:hover {
+                height: 140px;
+            }
+            #spare:hover {
+                height: 140px;
+            }
+            
+            .verticalAccordion li:hover h3 {
+                color: #fff;
+                background: #000;
+                background: -moz-linear-gradient( top, #0f8062, #119e79); 
+                background: -webkit-gradient(linear, left top, left bottom, from(#0f8062), to(#119e79)); 
+                background: -webkit-linear-gradient( top, #0f8062, #119e79);
+                background: -o-linear-gradient( top, #0f8062, #119e79);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff454545, endColorstr=#ff000000); 
+                -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff454545, endColorstr=#ff000000)";   
+            }
+            
+            .verticalAccordion li:hover h3:before {
+                border-color: transparent transparent transparent #fff;
+            }
